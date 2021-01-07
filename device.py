@@ -5,7 +5,6 @@ class Device:
 
     def __init__(self, device):
         self.device = device
-        print("CHECK!")
     def set_device(self):
 
         if self.device:
