@@ -3,7 +3,7 @@ class DeviceDataLoader():
     def __init__(self, dl, manager,device):
         self.dl = dl
         self.manager = manager
-        self.device
+        self.device = device
 
     def __iter__(self):
         """Yield a batch of data after moving it to device"""
