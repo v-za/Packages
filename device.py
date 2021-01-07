@@ -3,11 +3,12 @@ import torch
 
 class DeviceManager:
 
-    def __init__(self, cuda):
-        self.cuda = cuda
-    def set_device(self):
+    def __init__(self):
+        pass
 
-        if self.cuda:
+    def get_device(self):
+
+        if torch.cuda.is_available():
             return torch.device('cuda')
         else:
             return torch.device('cpu')
