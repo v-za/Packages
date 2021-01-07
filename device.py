@@ -1,7 +1,7 @@
 import torch
 
 
-class Device:
+class DeviceManager:
 
     def __init__(self, device):
         self.device = device
