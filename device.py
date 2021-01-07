@@ -12,7 +12,7 @@ class DeviceManager:
         else:
             return torch.device('cpu')
 
-    def to_device(self, data,device):
+    def to_device(self, data, device = self.device):
         'we move our tensor to given device'
         if isinstance(data, (list,tuple)):
             return [to_device(x,device) for x in data]
