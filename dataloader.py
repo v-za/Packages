@@ -7,7 +7,7 @@ class DeviceDataLoader():
     def __iter__(self):
         """Yield a batch of data after moving it to device"""
         for b in self.dl:
-            yield manager.to_device(b)
+            yield self.manager.to_device(b)
 
     def __len__(self):
         """Number of batches"""
